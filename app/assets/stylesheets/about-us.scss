@@ -1,0 +1,21 @@
+.about-us-wrapper{
+  position:relative;
+  & h2{
+    font-weight:bold;
+  }
+  & p{
+    font-size:16px;
+  }
+  & li{
+    font-size:16px;
+  }
+}
+.anchor{
+  & a{
+    position:fixed;
+    right: 25px;
+    bottom: 80px;
+    display:none;
+  }
+}
+a:focus {outline: none;}

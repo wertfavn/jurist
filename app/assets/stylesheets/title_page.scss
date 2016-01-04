@@ -148,3 +148,13 @@ div.item{
     }
   }
 }
+
+.anchor{
+  & a{
+    position:fixed;
+    right: 25px;
+    bottom: 80px;
+    display:none;
+  }
+}
+a:focus {outline: none;}

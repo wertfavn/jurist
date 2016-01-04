@@ -1,0 +1,59 @@
+.team-wrapper{
+  position:relative;
+}
+h2{
+  font-weight:bold;
+}
+.our-team{
+  margin-bottom:25px;
+  font-size:16px;
+  & .team-name{
+    font-size:19px;
+    margin-bottom:15px;
+  }
+  & .team-face{
+    & img{
+      height:150px;
+      width:150px;
+    }
+  }
+  & .team-text{
+    & p{}
+    & span{
+      display:block;
+      }
+  }
+}
+
+.other-team{
+  font-size:16px;
+  & .other-team-name{
+    & span{
+      display:block;
+      margin-bottom:10px;
+    }
+  }
+  & .other-team-foto{
+    & img {
+      margin-bottom:15px;
+      width:inherit;
+    }
+  }
+}
+
+.anchor{
+  & a{
+    position:fixed;
+    right: 25px;
+    bottom: 80px;
+    display:none;
+  }
+}
+a:focus {outline: none;}
+
+@media all and (max-width: 430px){
+  .team-face{
+    margin-bottom:15px;
+    float:none;
+  }
+}

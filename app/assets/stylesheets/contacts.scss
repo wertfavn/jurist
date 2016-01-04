@@ -1,0 +1,19 @@
+.contacts-wrapper{
+  & .contacts{
+    & .foto-contacts{
+      & img{ 
+        min-height: 175px;
+        max-height: 300px;
+        width:100%;
+        margin-bottom:25px;
+        }
+    }
+    & .adress{
+      & span{
+        font-size:16px;
+        display:block;
+      }
+    }
+  }
+  
+}
