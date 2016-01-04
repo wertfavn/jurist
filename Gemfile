@@ -26,7 +26,6 @@ gem 'activeadmin', github: 'activeadmin'
 gem 'friendly_id'
 gem 'devise'
 gem 'acts-as-taggable-on', '~> 3.4'
-gem 'babosa'
 gem 'ckeditor', github: 'galetahub/ckeditor'
 gem 'bootstrap-sass'
 gem 'cloudinary'
@@ -41,6 +40,7 @@ gem 'capistrano-rvm'
 gem 'passenger'
 gem 'jquery-fileupload-rails'
 gem 'babosa'
+gem "font-awesome-rails"
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
