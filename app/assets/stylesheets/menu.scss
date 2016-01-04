@@ -1,0 +1,10 @@
+
+    .navbar-nav{
+      float: none;
+      text-align: center;
+      & li {
+        float: none;
+        display: inline-block;
+        } 
+      }
+   
