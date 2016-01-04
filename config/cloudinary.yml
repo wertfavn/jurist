@@ -1,0 +1,18 @@
+development:
+  cloud_name: kharkovjurist
+  api_key: '812413521969985'
+  api_secret: qawm--Vzy41MZGmlE9uGsdFcInM
+  enhance_image_tag: true
+  static_image_support: false
+production:
+  cloud_name: kharkovjurist
+  api_key: '812413521969985'
+  api_secret: qawm--Vzy41MZGmlE9uGsdFcInM
+  enhance_image_tag: true
+  static_image_support: true
+test:
+  cloud_name: kharkovjurist
+  api_key: '812413521969985'
+  api_secret: qawm--Vzy41MZGmlE9uGsdFcInM
+  enhance_image_tag: true
+  static_image_support: false
