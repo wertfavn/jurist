@@ -40,7 +40,7 @@ gem 'passenger'
 gem 'jquery-fileupload-rails'
 gem 'babosa'
 gem "font-awesome-rails"
-gem 'simple_captcha2', require: 'simple_captcha'
+gem "recaptcha", :require => "recaptcha/rails"
 
 group :development, :test do
   gem 'byebug'
