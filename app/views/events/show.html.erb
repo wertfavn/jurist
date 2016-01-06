@@ -16,11 +16,8 @@
 
 
 
-<script>
-
-$('.fancybox').fancybox({
-  openEffect: 'none',
-  closeEffect: 'none'
-});
-
+<script type="text/javascript", 'data-turbolinks-eval'="false">  
+  $(document).bind('page:change', function(){
+    $('.fancybox').fancybox({ parent: "body"})
+  });
 </script>

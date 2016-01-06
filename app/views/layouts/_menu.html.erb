@@ -17,7 +17,7 @@
         <li><a href="<%= team_path %>">НАША КОМАДА</a></li>
         <li><a href="<%= events_path %>">ПРОВЕДЕНI ЗАХОДИ</a></li>
         <li><a href="<%= contacts_path %>">КОНТАКТИ</a></li>
-        <li><a href="<%= contact_path %>">ЯК СТАТИ ЧЛЕНОМ КРМЮ?</a></li>
+        <li><%= link_to "ЯК СТАТИ ЧЛЕНОМ КРМЮ?", contact_path, "data-no-turbolink" => true%></li>
       </ul>
      </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->

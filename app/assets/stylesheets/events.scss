@@ -3,6 +3,7 @@
   text-align: center;
   .events.container{
    float: none;
+   min-height: 600px;
   }
 }
 
@@ -15,31 +16,27 @@
 
 .event-all-item{
   text-align: left;
-  & span{
-    display: none;
-    width: 300px;
-    background-color: rgba(0,255,0,.5);
-    color: white;
-    font-size: 24px;
-    text-align: left;
-    z-index: 999;
-    margin-top: -50px;
-    position: absolute;
-    left: 15px;
-    bottom: 0;
-  }
-  
   &:hover{
     cursor: pointer;
   }
-  
   &:hover > span{
     display: block;
   }
 }
 
+.event-all-name{
+  display: block;
+  font-size: 24px;
+  color: #2E8B57;
+  text-align: center;
+  width: 300px;
+}
 
-
+.event-all-date{
+  display: block;
+  width: 300px;
+  text-align: right;
+}
 //----------------------------- SHOW ------------------------------//
 
 #event-description{

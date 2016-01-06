@@ -9,6 +9,7 @@
 			<div class="event-all-item col-xs-12 col-sm-6 col-md-4 col-lg-4">
 				<%= cl_image_tag(event.title_image.path, { size: '300x300', crop: :fill })%>
 				<span class="event-all-name"> <%= event.name%> </span>
+				<span class="event-all-date"> <%= event.date.strftime("%d.%m.%Y")%> </span>
 			</div> </a>
 			<% end %>
 		</div>
