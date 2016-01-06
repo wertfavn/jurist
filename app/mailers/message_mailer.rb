@@ -1,7 +1,7 @@
 class MessageMailer < ApplicationMailer
   
   default from: "krmuofficial@gmail.com"
-  default to: "evgeniy.zhukovskiy.big@gmail.com"
+  default to: "completelydifferentuser@gmail.com"
 
   def new_message(message)
     @message = message
