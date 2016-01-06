@@ -1,13 +1,13 @@
 ActiveAdmin.register Event do
   
-  permit_params :name, :description, :slug, :title_image, :regular_images => []
+  permit_params :name, :description, :slug, :title_image, :date, :regular_images => []
   
   actions :all
   
   index do
     column :name
     column :description
-    column :created_at
+    column :date
     actions
   end
   
@@ -34,7 +34,7 @@ ActiveAdmin.register Event do
     
     private
     def page_params
-      params.require(:page).permit(:name, :description, :slug, :title_image, :regular_images => [])
+      params.require(:page).permit(:name, :description, :slug, :title_image, :date, :regular_images => [])
     end
   end
   
@@ -42,9 +42,11 @@ ActiveAdmin.register Event do
    f.inputs "Событие" do
      f.input :name, :label => "Название события"
      f.input :description, :label => "Описание"
+     f.input :date, class: "datepicker"
      f.input :title_image, :as => :formtastic_attachinary
      f.input :regular_images, :as => :formtastic_attachinary 
    end
+   
    f.actions
  end
   

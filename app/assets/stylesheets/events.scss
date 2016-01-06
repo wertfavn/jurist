@@ -1,3 +1,55 @@
-// Place all the styles related to the Events controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.event-align{
+  text-align: center;
+  .events.container{
+   float: none;
+   min-height: 600px;
+  }
+}
+
+#events-title{
+  font-size: 48px;
+  display:  block;
+  width: 100%;
+  margin: 25px 0 25px 0; 
+}
+
+.event-all-item{
+  text-align: left;
+  &:hover{
+    cursor: pointer;
+  }
+  &:hover > span{
+    display: block;
+  }
+}
+
+.event-all-name{
+  display: block;
+  font-size: 24px;
+  color: #2E8B57;
+  text-align: center;
+  width: 300px;
+}
+
+.event-all-date{
+  display: block;
+  width: 300px;
+  text-align: right;
+}
+//----------------------------- SHOW ------------------------------//
+
+#event-description{
+  font-size: 18px;
+  line-height: 1.5em;
+  display: block;
+  padding: 15px 20px 15px 20px;
+  margin: 20px 0 20px 0;
+  text-align: left;
+}
+
+
+.event-item{
+  margin: 0 auto;
+  float: none!important;
+}

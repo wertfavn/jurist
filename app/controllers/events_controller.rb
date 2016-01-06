@@ -1,8 +1,10 @@
 class EventsController < ApplicationController
-  def index
+  def index  
+    @events = Event.all
   end
 
   def show
+    @event = Event.find(params[:id])
   end
   
   def title
@@ -22,6 +24,7 @@ class EventsController < ApplicationController
   end
   
   def join_us
+    @message = Message.new
     render 'join_us'
   end
   
