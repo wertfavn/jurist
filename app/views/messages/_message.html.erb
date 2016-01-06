@@ -1,34 +1,37 @@
 <%= form_for @message, url: contact_path do |message_form| %>
   <fieldset>
     <div class="field">
-      <%= message_form.text_field :name, placeholder: "П.I.Б." %>
+      <%= message_form.text_field :name, placeholder: "П.I.Б.*" %>
     </div>
     
     <div class="field">
-      <%= message_form.text_field :studywork, placeholder: "Мiсце навчання / роботи" %>
+      <%= message_form.text_field :studywork, placeholder: "Мiсце навчання / роботи*" %>
+    </div>
+    
+    <div class="field">
+    	<%= message_form.select :year_birth, (1950..2016), :prompt => "Рiк народження*"%>
     </div>
     
      <div class="field">
-      <%= message_form.text_field :phone, placeholder: "Телефон" %>
+      <%= message_form.phone_field :phone, placeholder: "Телефон*" %>
+    </div>
+    
+    
+    <div class="field">
+      <%= message_form.email_field :email, placeholder: "Email*"%>
     </div>
     
     <div class="field">
-    	<%= message_form.number_field :year_birth, value: "2016"%>
-    </div>
-    <div class="field">
-      <%= message_form.email_field :email, placeholder: "Email"%>
-    </div>
-    
-    <div class="field">
-      <%= message_form.text_area :content, placeholder: "Message"%>
+      <%= message_form.text_area :content, placeholder: "Чому я бажаю вступити до КРМЮ*"%>
     </div>
   </fieldset>
   
-  <%= raw recaptcha_tags %>
+  <div class="g-recaptcha" data-sitekey="6LedmhQTAAAAAHernFn7b_xOQ0S0ObcsIwZl6n3B" data-callback="enableBtn"></div>
   
   <fieldset>
     <div class="field">
-      <%= message_form.submit "Вiдправити" %>
+      <%= message_form.submit "Вiдправити", id: "submitbtn" %>
     </div>
   </fieldset>
 <% end %>
+

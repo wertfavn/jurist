@@ -6,12 +6,12 @@ Rails.application.routes.draw do
   ActiveAdmin.routes(self)
   
   resources :events
-  get 'contact', to: 'events#title', as: 'contact'
+  get 'contact', to: 'messages#new', as: 'contact'
   post 'contact', to: 'messages#create'
   root to: 'events#title'
   get '/', to: 'events#title'
   get '/about-us', to: 'events#about_us', as: :about
   get '/team', to: 'events#team', as: :team
   get '/contacts', to: 'events#contacts', as: :contacts
-  get '/join_us', to: 'events#join_us', as: :join_us
+  get '/join_us', to: 'messages#new', as: :join_us
 end

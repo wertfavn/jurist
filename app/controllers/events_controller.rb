@@ -8,9 +8,7 @@ class EventsController < ApplicationController
   end
   
   def title
-    @message = Message.new
     render 'title_page'
-    
   end
   
   def about_us
@@ -26,6 +24,7 @@ class EventsController < ApplicationController
   end
   
   def join_us
+    @message = Message.new
     render 'join_us'
   end
   

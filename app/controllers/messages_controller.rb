@@ -6,20 +6,17 @@ class MessagesController < ApplicationController
   def create
     @message = Message.new(message_params)
     
-    if @message.valid? 
-      if verify_recaptcha(:model => @message, :message => "Будь ласка введiть текст з зображення!")
+    if @message.valid? &&  verify_recaptcha(:model => @message, :message => "Будь ласка введiть текст з зображення!")
         MessageMailer.new_message(@message).deliver
-        redirect_to contact_path, notice: "Ваше повiдомлення було вiдправлене!"
-      end
+        redirect_to contact_path, notice: "Ваша анкета була вiдправлена!"
     else
-      #flash[:alert] = "Сталась помилка пiд час вiдправлення повiдомлення!"
-      redirect_to contact_path, notice: "Сталась помилка пiд час вiдправлення повiдомлення!"
+      redirect_to contact_path, notice: "Сталась помилка пiд час вiдправлення анкети. Перевiрте, будь ласка, iнформацiю!"
     end
   end
 
 private
 
   def message_params
-    params.require(:message).permit(:name, :email, :content, :captcha, :captcha_key)
+    params.require(:message).permit(:name, :email, :content, :phone, :why, :year_birth, :studywork, :captcha, :captcha_key)
   end
 end

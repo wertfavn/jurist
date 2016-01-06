@@ -41,7 +41,7 @@ gem 'jquery-fileupload-rails'
 gem 'babosa'
 gem "font-awesome-rails"
 gem "recaptcha", :require => "recaptcha/rails"
-
+gem 'simple_form'
 group :development, :test do
   gem 'byebug'
 end
