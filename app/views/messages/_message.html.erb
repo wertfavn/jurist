@@ -1,9 +1,20 @@
 <%= form_for @message, url: contact_path do |message_form| %>
   <fieldset>
     <div class="field">
-      <%= message_form.text_field :name, placeholder: "Name" %>
+      <%= message_form.text_field :name, placeholder: "П.I.Б." %>
     </div>
     
+    <div class="field">
+      <%= message_form.text_field :studywork, placeholder: "Мiсце навчання / роботи" %>
+    </div>
+    
+     <div class="field">
+      <%= message_form.text_field :phone, placeholder: "Телефон" %>
+    </div>
+    
+    <div class="field">
+    	<%= message_form.number_field :year_birth, value: "2016"%>
+    </div>
     <div class="field">
       <%= message_form.email_field :email, placeholder: "Email"%>
     </div>
@@ -13,9 +24,11 @@
     </div>
   </fieldset>
   
+  <%= show_simple_captcha(:object => 'message', :label => "human authentication") %>
+  
   <fieldset>
     <div class="field">
-      <%= message_form.submit "Send" %>
+      <%= message_form.submit "Вiдправити" %>
     </div>
   </fieldset>
 <% end %>

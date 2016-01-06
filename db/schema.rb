@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160106110637) do
+ActiveRecord::Schema.define(version: 20160106135725) do
 
   create_table "active_admin_comments", force: :cascade do |t|
     t.string   "namespace",     limit: 255
@@ -81,11 +81,24 @@ ActiveRecord::Schema.define(version: 20160106110637) do
 
   create_table "messages", force: :cascade do |t|
     t.string   "name",       limit: 191
+    t.string   "studywork",  limit: 191
+    t.integer  "year_birth", limit: 4
+    t.string   "phone",      limit: 191
+    t.text     "why",        limit: 65535
     t.string   "email",      limit: 191
     t.text     "content",    limit: 65535
     t.datetime "created_at",               null: false
     t.datetime "updated_at",               null: false
   end
+
+  create_table "simple_captcha_data", force: :cascade do |t|
+    t.string   "key",        limit: 40
+    t.string   "value",      limit: 6
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "simple_captcha_data", ["key"], name: "idx_key", using: :btree
 
   add_foreign_key "event_pictures", "events"
 end

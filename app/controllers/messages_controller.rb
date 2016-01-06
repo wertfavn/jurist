@@ -6,7 +6,7 @@ class MessagesController < ApplicationController
   def create
     @message = Message.new(message_params)
     
-    if @message.valid?
+    if @message.valid? && @message.valid_with_captcha?
       MessageMailer.new_message(@message).deliver
       redirect_to contact_path, notice: "Ваше повiдомлення було вiдправлене!"
     else
@@ -18,6 +18,6 @@ class MessagesController < ApplicationController
 private
 
   def message_params
-    params.require(:message).permit(:name, :email, :content)
+    params.require(:message).permit(:name, :email, :content, :captcha, :captcha_key)
   end
 end
