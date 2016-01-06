@@ -92,5 +92,5 @@ Rails.application.configure do
   }
   
    RECAPTCHA_PRIVATE_KEY = '6LedmhQTAAAAAKaYwgsrsDdIlbfegCZi0TnAuz5_'
-  
+   RECAPTCHA_PUBLIC_KEY = '6LedmhQTAAAAAHernFn7b_xOQ0S0ObcsIwZl6n3B'
 end
