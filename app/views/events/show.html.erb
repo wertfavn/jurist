@@ -1,2 +1,26 @@
-<h1>Events#show</h1>
-<p>Find me in app/views/events/show.html.erb</p>
+<div class="event-align col-xs-12 col-sm-12 col-md-12 col-lg-12 no-padding">
+	<div class="event-item col-xs-12 col-sm-12 col-md-10 col-lg-9">
+		
+		<span id="events-title"> <%= @event.name %> </span>
+		<span id="event-description"> <%= @event.description %> </span>
+		<% @event.regular_images.each do |reg_img|%>
+			<div class="regular-image col-xs-12 col-sm-4 col-md-4 col-lg-3">
+				<a class="fancybox" rel="fancybox-thumb" href="<%= cl_image_path reg_img.path%>">
+				<%= cl_image_tag(reg_img.path, { size: '300x300', crop: :fill })%>
+				</a>
+			</div>
+		<% end %>
+		
+	</div>
+</div>
+
+
+
+<script>
+
+$('.fancybox').fancybox({
+  openEffect: 'none',
+  closeEffect: 'none'
+});
+
+</script>
