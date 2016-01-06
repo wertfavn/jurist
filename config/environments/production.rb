@@ -91,4 +91,6 @@ Rails.application.configure do
   :enable_starttls_auto => true
   }
   
+   RECAPTCHA_PRIVATE_KEY = '6LedmhQTAAAAAKaYwgsrsDdIlbfegCZi0TnAuz5_'
+  
 end
