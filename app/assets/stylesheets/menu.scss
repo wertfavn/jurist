@@ -2,9 +2,17 @@
     .navbar-nav{
       float: none;
       text-align: center;
+       background-color: #66CDAA;
       & li {
         float: none;
         display: inline-block;
+        font-weight: 600;
+    &:hover{
+      background-color: #20B2AA;
+    }
+    &:hover > a{
+    color: white!important;
+    }
         } 
       }
    

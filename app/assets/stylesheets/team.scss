@@ -1,8 +1,12 @@
 .team-wrapper{
   position:relative;
+  float: none;
+  margin: 0 auto;
 }
 h2{
   font-weight:bold;
+  text-align: left;
+  margin-bottom: 40px;
 }
 .our-team{
   margin-bottom:25px;
@@ -10,14 +14,17 @@ h2{
   & .team-name{
     font-size:19px;
     margin-bottom:15px;
+    text-align: left;
   }
   & .team-face{
+    text-align: left;
     & img{
-      height:150px;
+      height:200px;
       width:150px;
     }
   }
   & .team-text{
+    text-align: left;
     & p{}
     & span{
       display:block;
@@ -25,9 +32,18 @@ h2{
   }
 }
 
+#others-team{
+  font-size: 20px;
+  display: block;
+  margin: 20px auto;
+  text-align: center;
+  
+}
+
 .other-team{
   font-size:16px;
   & .other-team-name{
+    text-align: left;
     & span{
       display:block;
       margin-bottom:10px;

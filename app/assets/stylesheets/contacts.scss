@@ -1,5 +1,9 @@
 .contacts-wrapper{
+  margin: 40px auto;
+  float: none!important;
   & .contacts{
+    margin-top: 15px;
+    text-align: left;
     & .foto-contacts{
       & img{ 
         min-height: 175px;

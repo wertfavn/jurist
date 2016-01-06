@@ -7,6 +7,10 @@
   }
 }
 
+.events-all{
+  padding: 0;
+}
+
 #events-title{
   font-size: 48px;
   display:  block;
@@ -52,4 +56,7 @@
 .event-item{
   margin: 0 auto;
   float: none!important;
+  & h2{
+    text-align: left;
+  }
 }
