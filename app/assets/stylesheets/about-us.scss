@@ -22,6 +22,10 @@
     right: 25px;
     bottom: 80px;
     display:none;
+    & img{
+      height:30px;
+      width:30px;
+    }
   }
 }
 a:focus {outline: none;}
