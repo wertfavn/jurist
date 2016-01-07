@@ -1,17 +1,23 @@
-
+.container-fluid{
+  padding: 0;
+}
     .navbar-nav{
+      padding: 0;
       float: none;
       text-align: center;
-       background-color: #66CDAA;
+       background-color: #19b9b1;
       & li {
+        & a {
+          color: white!important;
+        }
         float: none;
         display: inline-block;
         font-weight: 600;
     &:hover{
-      background-color: #20B2AA;
+      background-color: #14a095;
     }
     &:hover > a{
-    color: white!important;
+    color: white;
     }
         } 
       }
