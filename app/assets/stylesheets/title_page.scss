@@ -52,7 +52,7 @@ div.item{
 }
 
 .text-column{
-  background-color: #66CDAA;
+  background-color: #61CCC7;
   text-align: center;
   float: left;
   display: inline-block;
@@ -111,6 +111,10 @@ div.item{
     display: inline-block;
     margin: 10px 15px 10px 15px;
     opacity: .7;
+    & img{
+      height: 180px;
+      width: auto;
+    }
     &:hover{
       opacity: 1;
       transition: .3s ease;
