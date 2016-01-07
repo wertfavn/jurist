@@ -52,7 +52,7 @@ div.item{
 }
 
 .text-column{
-  background-color: #19b9b1;
+  background-color: #66CDAA;
   text-align: center;
   float: left;
   display: inline-block;
@@ -62,7 +62,7 @@ div.item{
     display: block;
     font-family: Courier;
     font-size: 18px;
-    color: #14a095;
+    color: #666;
     padding-bottom: 20px;
     text-align: left;
     font-weight: 600;
@@ -128,8 +128,7 @@ div.item{
     margin-bottom: 25px;
     & img{
       width: 150px;
-      height: 150px;
-      border-radius: 50%;
+      height: 200px;
     }
     & .team-member-name{
       text-align: center;
