@@ -13,7 +13,7 @@ development:
   <<: *default
   database: jurist_dev
   username: root
-  password: antip
+  password: default_password
 
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".
@@ -22,11 +22,11 @@ test:
   <<: *default
   database: jurist_test
   username: root
-  password: antip
+  password: default_password
 
 production:
   <<: *default
   database: jurist_production
   username: root
-  password: antip
+  password: default_password
   

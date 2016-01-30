@@ -51,7 +51,12 @@ div.item{
   margin-bottom: 30px;
 }
 
+.flexrow{
+  display: flex;
+}
+
 .text-column{
+  flex: 1;
   background-color: #61CCC7;
   text-align: center;
   float: left;
@@ -62,16 +67,15 @@ div.item{
     display: block;
     font-family: Courier;
     font-size: 18px;
+    text-align: center;
     color: #666;
     padding-bottom: 20px;
-    text-align: left;
     font-weight: 600;
   }
   & img{
     width: 100px;
     height: 100px;
     margin: 15px 15px 10px 0;
-    float: left;
   }
   & p{
     text-align: justify;
