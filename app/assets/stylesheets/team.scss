@@ -52,7 +52,8 @@ h2{
   & .other-team-foto{
     & img {
       margin-bottom:15px;
-      width:inherit;
+      /*width:inherit;*/
+      width:100%;
     }
   }
 }
